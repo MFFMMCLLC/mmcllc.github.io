@@ -8,8 +8,8 @@
 
 /* Body and general layout */
 body {
-  background-color: #1009E6;
-  color: #1009E6;
+  background-color: #2A2DC9;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -19,8 +19,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1009E6;
-  color: #1009E6;
+  background-color: #1e1e1e;
+  color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -33,7 +33,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 1000px;
+  height: 250px;
   width: auto;
 }
 
@@ -44,7 +44,7 @@ header nav {
 }
 
 header nav a {
-  color: #1009E6;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -56,7 +56,7 @@ header nav a.active {
 }
 
 .contact-email a {
-  color: #000000;
+  color: #ff6f61;
   font-weight: bold;
 }
 
@@ -90,8 +90,8 @@ header nav a.active {
 #hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #2447D4, #0B094F;
-  color: #2447D4;
+  background: linear-gradient(135deg, #ff6f61, #f8b195);
+  color: #fff;
 }
 
 #hero h1 {
@@ -171,7 +171,7 @@ footer {
     position: absolute;
     right: 0;
     top: 70px;
-    background-color: #1009E6;
+    background-color: #1e1e1e;
     height: calc(100vh - 70px);
     flex-direction: column;
     align-items: center;
@@ -188,6 +188,3 @@ footer {
     display: flex;
   }
 }
-
-
-
