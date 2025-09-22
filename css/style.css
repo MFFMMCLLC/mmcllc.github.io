@@ -8,8 +8,8 @@
 
 /* Body and general layout */
 body {
-  background-color: #2A2DC9;
-  color: #2447D4;
+  background-color: #1009E6;
+  color: #1009E6;
   line-height: 1.6;
 }
 
@@ -19,8 +19,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #2A2DC9;
-  color: #2447D4;
+  background-color: #1009E6;
+  color: #1009E6;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -44,7 +44,7 @@ header nav {
 }
 
 header nav a {
-  color: #2447D4;
+  color: #1009E6;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -171,7 +171,7 @@ footer {
     position: absolute;
     right: 0;
     top: 70px;
-    background-color: #1e1e1e;
+    background-color: #1009E6;
     height: calc(100vh - 70px);
     flex-direction: column;
     align-items: center;
@@ -188,5 +188,6 @@ footer {
     display: flex;
   }
 }
+
 
 
