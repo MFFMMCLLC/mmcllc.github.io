@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaxMotoCare</title>
-    <!-- Correct path to CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaxMotoCare - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="MaxMotoCare Logo">
-            <span>MaxMotoCare</span>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="credentials.html">Credentials</a></li>
-                <li><a href="booking.html">Book Now</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="payment.html">Payment</a></li>
-                <li><a href="hours.html">Hours</a></li>
-                <li><a href="reviews.html">Google Reviews</a></li>
-                <li><a href="social.html">Social</a></li>
-            </ul>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="MaxMotoCare Logo">
+      <span>MaxMotoCare</span>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="credentials.html">Credentials</a>
+      <a href="booking.html">Book Now</a>
+      <a href="faq.html">FAQ</a>
+      <a href="payment.html">Payment</a>
+      <a href="hours.html">Hours</a>
+      <a href="reviews.html">Google Reviews</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to MaxMotoCare</h1>
-            <p>Your neighborhood auto repair expert</p>
-            <a href="booking.html" class="btn">Book Now</a>
-        </section>
+  <section id="hero">
+    <h1>Welcome to MaxMotoCare</h1>
+    <p>Your trusted neighborhood auto service</p>
+  </section>
 
-        <section class="services-preview">
-            <h2>Our Services</h2>
-            <div class="services-cards">
-                <div class="card">
-                    <h3>Oil Change</h3>
-                    <p>Fast, reliable, and clean oil changes for your vehicle.</p>
-                </div>
-                <div class="card">
-                    <h3>Brake Repair</h3>
-                    <p>Ensure your brakes are safe and responsive.</p>
-                </div>
-                <div class="card">
-                    <h3>Custom Work</h3>
-                    <p>Specialized repairs tailored to your vehicle’s needs.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <section id="intro">
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="services.html">View Services</a></li>
+      <li><a href="booking.html">Book Your Service</a></li>
+      <li><a href="faq.html">FAQ & Licensing</a></li>
+    </ul>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 MaxMotoCare. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; <span id="year"></span> MaxMotoCare</p>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
