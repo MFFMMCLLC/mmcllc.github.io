@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #0E0E6E;
+  background-color: #FFFFFF;
   color: #fff;
   position: sticky;
   top: 0;
@@ -188,6 +188,7 @@ footer {
     display: flex;
   }
 }
+
 
 
 
