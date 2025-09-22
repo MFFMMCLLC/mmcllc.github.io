@@ -8,7 +8,7 @@
 
 /* Body and general layout */
 body {
-  background-color: #2A2DC9;
+  background-color: #000000;
   color: #333;
   line-height: 1.6;
 }
@@ -188,4 +188,5 @@ footer {
     display: flex;
   }
 }
+
 
