@@ -8,63 +8,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="container header-container">
-      <div class="logo">
-        <img src="images/logo.png" alt="MaxMotoCare Logo">
-        <span>MaxMotoCare</span>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Credentials</li>
-          <li>Book Now</li>
-          <li>FAQ</li>
-          <li>Payment</li>
-          <li>Hours</li>
-          <li>Google Reviews</li>
-          <li>Social</li>
-        </ul>
-      </nav>
-      <div class="mobile-menu">
-        <i class="fas fa-bars"></i>
-      </div>
+    <div class="logo">
+      <img src="images/logo.png" alt="MaxMotoCare Logo">
+      <span>MaxMotoCare</span>
     </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="credentials.html">Credentials</a>
+      <a href="faq.html">FAQ</a>
+      <a href="payment.html">Payment</a>
+      <a href="hours.html">Hours</a>
+      <a href="reviews.html">Google Reviews</a>
+      <span class="contact-email">Email: <a href="mailto:your@email.com">your@email.com</a></span>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>MaxMotoCare</h1>
-      <p>Your neighborhood mechanic providing professional auto repair services.</p>
-    </div>
+  <section id="hero">
+    <h1>Welcome to MaxMotoCare</h1>
+    <p>Your trusted neighborhood mechanic. Fast, reliable, and professional automotive services.</p>
   </section>
 
-  <!-- Main Content -->
-  <section class="content">
-    <h2>Home</h2>
-    <p>Welcome to MaxMotoCare, your trusted local mechanic. I provide a range of auto repair and maintenance services including oil changes, brake repair, steering & suspension work, diagnostics, and more. My mission is to deliver reliable, professional service for all your automotive needs.</p>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <div class="footer-container">
-      <p>&copy; 2025 MaxMotoCare. All rights reserved.</p>
-      <div class="social-icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-google"></i>
-      </div>
-    </div>
+    <p>&copy; <span id="year"></span> MaxMotoCare</p>
   </footer>
 
+  <script src="js/script.js"></script>
   <script>
-    const mobileMenu = document.querySelector('.mobile-menu i');
-    const navLinks = document.querySelector('.nav-links');
-    mobileMenu.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
