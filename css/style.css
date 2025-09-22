@@ -8,7 +8,7 @@
 
 /* Body and general layout */
 body {
-  background-color: #f8f9fa;
+  background-color: #4B4B5C;
   color: #333;
   line-height: 1.6;
 }
@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1e1e1e;
+  background-color: #4B4B5C;
   color: #fff;
   position: sticky;
   top: 0;
@@ -33,7 +33,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 50px;
+  height: 500px;
   width: auto;
 }
 
@@ -44,7 +44,7 @@ header nav {
 }
 
 header nav a {
-  color: #fff;
+  color: #4B4B5C;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -188,3 +188,4 @@ footer {
     display: flex;
   }
 }
+
