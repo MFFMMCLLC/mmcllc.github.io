@@ -1,22 +1,53 @@
-<section id="services">
-  <h2>Services Offered</h2>
-  <div class="services-grid">
-    <div class="service-card"><i class="fas fa-oil-can"></i><h3>Oil Changes</h3><p>Conventional, Semi-Synthetic, Full Synthetic, Diesel, and Special.</p></div>
-    <div class="service-card"><i class="fas fa-windshield"></i><h3>Wiper Blades & Lightbulbs</h3><p>Quick replacement of wiper blades, headlights, and bulbs.</p></div>
-    <div class="service-card"><i class="fas fa-filter"></i><h3>Filters</h3><p>Engine & Cabin air filters for clean air and smooth performance.</p></div>
-    <div class="service-card"><i class="fas fa-plug"></i><h3>Spark Plugs & Wires</h3><p>Replacement for reliable ignition and performance.</p></div>
-    <div class="service-card"><i class="fas fa-car"></i><h3>Brakes</h3><p>Brake pad and component replacement for safety.</p></div>
-    <div class="service-card"><i class="fas fa-music"></i><h3>Radio Installation</h3><p>Upgrade or replace your car’s radio.</p></div>
-    <div class="service-card"><i class="fas fa-water"></i><h3>Weather Seals</h3><p>Inspection and replacement to keep your car sealed.</p></div>
-    <div class="service-card"><i class="fas fa-cogs"></i><h3>Serpentine Belts</h3><p>Replacement to prevent breakdowns.</p></div>
-    <div class="service-card"><i class="fas fa-car-battery"></i><h3>Battery Changes</h3><p>Fast and safe replacement service.</p></div>
-  </div>
-  <p>Every service includes a complimentary multi-point inspection. Prices vary by make/model. Free estimates via email.</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaxMotoCare - Services</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="MaxMotoCare Logo">
+      <span>MaxMotoCare</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="credentials.html">Credentials</a>
+      <a href="faq.html">FAQ</a>
+      <a href="payment.html">Payment</a>
+      <a href="hours.html">Hours</a>
+      <a href="reviews.html">Google Reviews</a>
+      <span class="contact-email">Email: <a href="mailto:maxmotorcarellc@gmail.com">maxmotorcarellc@gmail.com</a></span>
+    </nav>
+  </header>
 
-<footer>
-  <p>Follow us:</p>
-  <p>Copyright © <span id="year"></span> MaxMotoCare</p>
-</footer>
-<script src="js/script.js"></script>
+  <section id="services">
+    <h2>Services Offered</h2>
+    <div class="services-grid">
+      <div class="service-card"><i class="fas fa-oil-can"></i><h3>Oil Changes</h3><p>Conventional, Semi-Synthetic, Full Synthetic, Diesel, and Special.</p></div>
+      <div class="service-card"><i class="fas fa-windshield"></i><h3>Wiper Blades & Lightbulbs</h3><p>Quick replacement of wiper blades, headlights, and bulbs.</p></div>
+      <div class="service-card"><i class="fas fa-filter"></i><h3>Filters</h3><p>Engine & Cabin air filters for clean air and smooth performance.</p></div>
+      <div class="service-card"><i class="fas fa-plug"></i><h3>Spark Plugs & Wires</h3><p>Replacement for reliable ignition and performance.</p></div>
+      <div class="service-card"><i class="fas fa-car"></i><h3>Brakes</h3><p>Brake pad and component replacement for safety.</p></div>
+      <div class="service-card"><i class="fas fa-music"></i><h3>Radio Installation</h3><p>Upgrade or replace your car’s radio.</p></div>
+      <div class="service-card"><i class="fas fa-water"></i><h3>Weather Seals</h3><p>Inspection and replacement to keep your car sealed.</p></div>
+      <div class="service-card"><i class="fas fa-cogs"></i><h3>Serpentine Belts</h3><p>Replacement to prevent breakdowns.</p></div>
+      <div class="service-card"><i class="fas fa-car-battery"></i><h3>Battery Changes</h3><p>Fast and safe replacement service.</p></div>
+    </div>
+    <p>Every service includes a complimentary multi-point inspection. Prices vary by make/model. Free estimates via email.</p>
+  </section>
 
+  <footer>
+    <p>&copy; <span id="year"></span> MaxMotoCare</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
