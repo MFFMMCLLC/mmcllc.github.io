@@ -14,6 +14,12 @@ body {
 }
 
 /* Header */
+
+/* Header hide on scroll */
+header {
+  transition: top 0.3s ease; /* Smooth slide when hiding/showing */
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -188,6 +194,7 @@ footer {
     display: flex;
   }
 }
+
 
 
 
