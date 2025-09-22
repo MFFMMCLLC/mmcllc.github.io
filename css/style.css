@@ -9,7 +9,7 @@
 /* Body and general layout */
 body {
   background-color: #2A2DC9;
-  color: #333;
+  color: #2447D4;
   line-height: 1.6;
 }
 
@@ -19,8 +19,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: #2A2DC9;
+  color: #2447D4;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -33,7 +33,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 250px;
+  height: 1000px;
   width: auto;
 }
 
@@ -44,7 +44,7 @@ header nav {
 }
 
 header nav a {
-  color: #fff;
+  color: #2447D4;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -56,7 +56,7 @@ header nav a.active {
 }
 
 .contact-email a {
-  color: #ff6f61;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -90,8 +90,8 @@ header nav a.active {
 #hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #ff6f61, #f8b195);
-  color: #fff;
+  background: linear-gradient(135deg, #2447D4, #0B094F;
+  color: #2447D4;
 }
 
 #hero h1 {
@@ -188,4 +188,5 @@ footer {
     display: flex;
   }
 }
+
 
