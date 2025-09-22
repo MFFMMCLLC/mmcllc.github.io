@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaxMotoCare</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #0a1a3f; /* navy */
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #5dade2; /* light blue underline */
+      left: 0;
+      bottom: -4px;
+      transition: width 0.2s ease-in-out;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Hamburger button */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    /* Mobile nav */
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0a1a3f;
+      padding: 1rem;
+    }
+
+    .mobile-nav a {
+      padding: 0.5rem 0;
+    }
+
+    section {
+      display: none;
+      padding: 3rem 2rem;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    h2 {
+      color: #0a1a3f;
+    }
+
+    footer {
+      background-color: #0a1a3f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MaxMotoCare</h1>
+    <nav>
+      <a href="#home" onclick="showSection('home')">Home</a>
+      <a href="#services" onclick="showSection('services')">Services</a>
+      <a href="#credentials" onclick="showSection('credentials')">Credentials</a>
+      <a href="#booking" onclick="showSection('booking')">Book Now</a>
+      <a href="#faq" onclick="showSection('faq')">FAQ</a>
+      <a href="#payment" onclick="showSection('payment')">Payment</a>
+      <a href="#hours" onclick="showSection('hours')">Hours</a>
+      <a href="https://placeholder-google-reviews.com" target="_blank">Google Reviews</a>
+      <a href="https://www.instagram.com/mff039/" target="_blank">Social</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMobileNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="showSection('home'); toggleMobileNav()">Home</a>
+    <a href="#services" onclick="showSection('services'); toggleMobileNav()">Services</a>
+    <a href="#credentials" onclick="showSection('credentials'); toggleMobileNav()">Credentials</a>
+    <a href="#booking" onclick="showSection('booking'); toggleMobileNav()">Book Now</a>
+    <a href="#faq" onclick="showSection('faq'); toggleMobileNav()">FAQ</a>
+    <a href="#payment" onclick="showSection('payment'); toggleMobileNav()">Payment</a>
+    <a href="#hours" onclick="showSection('hours'); toggleMobileNav()">Hours</a>
+    <a href="https://placeholder-google-reviews.com" target="_blank">Google Reviews</a>
+    <a href="https://www.instagram.com/mff039/" target="_blank">Social</a>
+  </div>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome to MaxMotoCare</h2>
+      <p>Your friendly neighborhood mechanic serving Springs Landing/Estates residents. Affordable, certified auto care with a personal touch—right in your community.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services Offered</h2>
+      <ul>
+        <li><strong>Oil Changes:</strong> Conventional, Semi-Synthetic, Full Synthetic, Diesel, and Special Oil Changes.</li>
+        <li><strong>Tire Rotations:</strong> Keep your tires wearing evenly and extend their lifespan. <strong>Disclaimer:</strong> An alignment may be needed after service depending on your vehicle’s condition.</li>
+        <li><strong>Wiper Blades & Lightbulbs:</strong> Replacement for safe driving.</li>
+        <li><strong>Filters:</strong> Engine and cabin air filters for performance and clean air.</li>
+        <li><strong>Spark Plugs & Wires:</strong> Smooth engine performance with fresh parts.</li>
+        <li><strong>Brakes:</strong> Reliable stopping power with pad and component replacement.</li>
+        <li><strong>Radio Installation:</strong> Upgrade or replace your car’s audio system.</li>
+        <li><strong>Weather Seals:</strong> Keep your car dry and quiet.</li>
+        <li><strong>Serpentine Belts:</strong> Prevent breakdowns with proper belt replacement. <strong>Disclaimer:</strong> Timing belts/chains are not available to be serviced.</li>
+        <li><strong>Battery Changes:</strong> Fast and safe battery replacement.</li>
+      </ul>
+      <p>Every service includes a complimentary multi-point inspection: brake life, coolant, windshield washer fluid, filters, transmission & engine oil, and an oil leak check.</p>
+      <p><strong>Pricing:</strong> Determined by make and model. Estimates are free and requested via email.</p>
+    </section>
+
+    <section id="credentials">
+      <h2>Credentials</h2>
+      <ul>
+        <li>Associate’s in Applied Science in Automotive Engineering Technology</li>
+        <li>2-year internship in the GM ASEP program</li>
+        <li>Full-time lube shop experience during my studies</li>
+        <li>Skilled in repairs, diagnostics, and maintenance</li>
+        <li>Experience with both modern and classic cars</li>
+      </ul>
+    </section>
+
+    <section id="booking">
+      <h2>Book Your Service</h2>
+      <p>Email me (address coming soon) to request your free estimate and schedule a service. The estimated service time will be provided, along with a breakdown of labor and parts. All services are performed in my garage for convenience and safety.</p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ, Insurance & Licensing</h2>
+      <p><strong>Are you licensed and insured?</strong><br>Yes! I have my FDACS Motor Vehicle Repair license and full liability insurance.</p>
+      <p><strong>Who can use your services?</strong><br>Only residents of Springs Landing/Estates at this time.</p>
+      <p><strong>Where is the work done?</strong><br>All services are performed in my garage. This prevents spills or leaks on residents’ driveways. All fluids and materials are personally and properly disposed of through government-approved waste centers.</p>
+      <p><strong>Do you work on European cars?</strong><br>Yes! I have the tools and experience, including an oil evacuation machine for European models.</p>
+      <p><strong>How do I get an estimate?</strong><br>Email me with your vehicle details—estimates are always free.</p>
+      <p><strong>Legal statements:</strong> (To be added soon.)</p>
+      <p><strong>Service Note:</strong> With every service, you’ll receive a personalized inspection sheet—free of charge.</p>
+    </section>
+
+    <section id="payment">
+      <h2>Payment Options</h2>
+      <p>I accept cash, Venmo, PayPal, and Apple Pay for your convenience.</p>
+    </section>
+
+    <section id="hours">
+      <h2>Hours of Operation</h2>
+      <p>Hours are flexible and scheduled by request, depending on parts arrival. Most availability is on weekends.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MaxMotoCare. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleMobileNav() {
+      const nav = document.getElementById("mobileNav");
+      nav.style.display = (nav.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>
