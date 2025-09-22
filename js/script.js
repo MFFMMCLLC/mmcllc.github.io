@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Hide header and logo on scroll
-let lastScrollTop = 0;
+// Hide header/logo until top of page
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
@@ -26,13 +25,11 @@ window.addEventListener('scroll', () => {
 
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > lastScrollTop && scrollTop > 50) {
-    // Scrolling down → hide header & logo
+  if (scrollTop > 50) {
+    // Scrolled down → hide header/logo
     header.style.top = `-${header.offsetHeight}px`;
   } else {
-    // Scrolling up → show header & logo
+    // At the top → show header/logo
     header.style.top = "0";
   }
-
-  lastScrollTop = scrollTop;
 });
