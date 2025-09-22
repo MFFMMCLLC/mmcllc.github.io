@@ -1,70 +1,33 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Body */
 body {
     background-color: #121212;
     color: #e0e0e0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
 }
 
-/* Header */
 header {
+    background-color: #1f1f1f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #1f1f1f;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-
-.logo img {
-    height: 50px;
-    margin-right: 10px;
 }
 
 .logo span {
-    font-size: 1.5rem;
-    font-weight: bold;
     color: #f2a900;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li a {
+.nav-links li a {
     color: #e0e0e0;
     text-decoration: none;
     padding: 0 1rem;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #f2a900;
 }
 
-/* Mobile Burger */
-.burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #e0e0e0;
-}
-
-/* Hero */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -72,25 +35,14 @@ nav ul li a:hover {
     color: #121212;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.hero .btn {
-    padding: 0.8rem 2rem;
+.btn {
     background-color: #121212;
     color: #f2a900;
+    padding: 0.8rem 2rem;
     text-decoration: none;
     border-radius: 5px;
 }
 
-/* Cards */
 .card {
     background-color: #1f1f1f;
     padding: 1.5rem;
@@ -99,10 +51,9 @@ nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-/* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
     background-color: #1f1f1f;
     color: #f2a900;
+    text-align: center;
+    padding: 1rem;
 }
