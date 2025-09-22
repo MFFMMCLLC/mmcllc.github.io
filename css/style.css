@@ -52,7 +52,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  color: #13136B; /* Accent color */
+  color: #ff6f61; /* Accent color */
 }
 
 .contact-email a {
@@ -188,5 +188,3 @@ footer {
     display: flex;
   }
 }
-
-
