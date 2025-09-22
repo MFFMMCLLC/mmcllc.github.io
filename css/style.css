@@ -8,7 +8,7 @@
 
 /* Body and general layout */
 body {
-  background-color: #2A2DC9;
+  background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
 }
@@ -33,7 +33,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 250px;
+  height: 50px;
   width: auto;
 }
 
