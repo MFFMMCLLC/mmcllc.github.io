@@ -52,7 +52,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  color: #ff6f61; /* Accent color */
+  color: #1e1e1e; /* Accent color */
 }
 
 .contact-email a {
@@ -90,7 +90,7 @@ header nav a.active {
 #hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #ff6f61, #f8b195);
+  background: linear-gradient(135deg, #0E256E, #1A43C4);
   color: #fff;
 }
 
@@ -188,3 +188,4 @@ footer {
     display: flex;
   }
 }
+
