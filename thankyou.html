@@ -51,8 +51,16 @@
     <a href="index.html" class="btn">Return Home</a>
   </main>
 
-  <footer>
-    <p>&copy; 2025 MaxMotoCare. All Rights Reserved.</p>
-  </footer>
+<footer>
+  <div class="footer-content">
+    <p>&copy; <span id="year"></span> MAXMOTOCARE LLC. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Auto-update year script -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
